@@ -1,3 +1,7 @@
+## 0.2.1
+
+- Brand icon and logo in `custom_components/waarneming/brand/` (shown by Home Assistant 2026.3+ without the brands repository).
+
 # Changelog
 
 ## 0.2.0
