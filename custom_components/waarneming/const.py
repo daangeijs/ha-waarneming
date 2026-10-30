@@ -9,7 +9,7 @@ DOMAIN: Final = "waarneming"
 
 API_BASE: Final = "https://waarneming.nl/api/v1"
 USER_AGENT: Final = (
-    "HomeAssistant-Waarneming/0.2.0 (+https://github.com/daangeijs/ha-waarneming)"
+    "HomeAssistant-Waarneming/0.2.2 (+https://github.com/daangeijs/ha-waarneming)"
 )
 ATTRIBUTION: Final = "Data: waarneming.nl / observation.org"
 
@@ -49,3 +49,6 @@ RATE_LIMIT_BACKOFF: Final = timedelta(hours=1)  # used when a 429 has no Retry-A
 
 HOME_REGION: Final = "Rond huis"  # `region` of sightings from the home-zone source
 UNIT: Final = "waarnemingen"
+
+# Shown in the config flow; hassfest rejects URLs inside strings.json.
+EXAMPLE_AREA_URL: Final = "https://waarneming.nl/locations/701925/"

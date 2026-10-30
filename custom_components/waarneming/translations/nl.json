@@ -16,7 +16,7 @@
         },
         "data_description": {
           "use_home": "Waarnemingen binnen de straal van zone.home (bij elke update gelezen; de locatie wordt nergens opgeslagen).",
-          "add_areas": "Gebied-id's of links zoals https://waarneming.nl/locations/701925/, één per regel. Deelgebieden tellen mee.",
+          "add_areas": "Gebied-id's of links zoals {example_url}, één per regel. Deelgebieden tellen mee.",
           "min_rarity": "Zeldzaamheid zoals waarneming.nl die voor die plek aangeeft.",
           "species_group": "1 = vogels (andere groepen volgens de groep-id's van waarneming.nl).",
           "max_sightings": "De nieuwste komen in het attribuut `sightings`; de status telt ze allemaal."
@@ -52,7 +52,7 @@
         },
         "data_description": {
           "use_home": "Waarnemingen binnen de straal van zone.home (bij elke update gelezen; de locatie wordt nergens opgeslagen).",
-          "add_areas": "Gebied-id's of links zoals https://waarneming.nl/locations/701925/, één per regel. Deelgebieden tellen mee.",
+          "add_areas": "Gebied-id's of links zoals {example_url}, één per regel. Deelgebieden tellen mee.",
           "min_rarity": "Zeldzaamheid zoals waarneming.nl die voor die plek aangeeft.",
           "species_group": "1 = vogels (andere groepen volgens de groep-id's van waarneming.nl).",
           "max_sightings": "De nieuwste komen in het attribuut `sightings`; de status telt ze allemaal.",

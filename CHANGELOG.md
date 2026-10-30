@@ -1,3 +1,8 @@
+## 0.2.2
+
+- Config flow: the example area link is a description placeholder (hassfest rejects URLs in strings).
+- User-Agent carries the real version.
+
 ## 0.2.1
 
 - Brand icon and logo in `custom_components/waarneming/brand/` (shown by Home Assistant 2026.3+ without the brands repository).
