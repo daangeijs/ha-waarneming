@@ -16,7 +16,7 @@
         },
         "data_description": {
           "use_home": "Sightings within the radius of zone.home (read at each update; the location is never stored).",
-          "add_areas": "Area ids or links like https://waarneming.nl/locations/701925/, one per line. Sub-areas are included.",
+          "add_areas": "Area ids or links like {example_url}, one per line. Sub-areas are included.",
           "min_rarity": "Rarity as waarneming.nl rates it for that place.",
           "species_group": "1 = birds (other groups use waarneming.nl's group ids).",
           "max_sightings": "The newest ones go into the `sightings` attribute; the state counts all."
@@ -52,7 +52,7 @@
         },
         "data_description": {
           "use_home": "Sightings within the radius of zone.home (read at each update; the location is never stored).",
-          "add_areas": "Area ids or links like https://waarneming.nl/locations/701925/, one per line. Sub-areas are included.",
+          "add_areas": "Area ids or links like {example_url}, one per line. Sub-areas are included.",
           "min_rarity": "Rarity as waarneming.nl rates it for that place.",
           "species_group": "1 = birds (other groups use waarneming.nl's group ids).",
           "max_sightings": "The newest ones go into the `sightings` attribute; the state counts all.",

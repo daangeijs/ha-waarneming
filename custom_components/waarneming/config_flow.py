@@ -29,6 +29,7 @@ from homeassistant.helpers.selector import (
 from .api import WaarnemingClient, WaarnemingError, WaarnemingNotFound, parse_area_list
 from .const import (
     CONF_ADD_AREAS,
+    EXAMPLE_AREA_URL,
     CONF_AREAS,
     CONF_DAYS,
     CONF_MAX_SIGHTINGS,
@@ -179,7 +180,7 @@ class WaarnemingConfigFlow(ConfigFlow, domain=DOMAIN):
         self, user_input: dict[str, Any] | None = None
     ) -> ConfigFlowResult:
         errors: dict[str, str] = {}
-        placeholders: dict[str, str] = {"area": ""}
+        placeholders: dict[str, str] = {"area": "", "example_url": EXAMPLE_AREA_URL}
         if user_input is not None:
             areas, _, errors, found = await async_resolve_areas(
                 self.hass, [], user_input.get(CONF_ADD_AREAS)
@@ -246,7 +247,11 @@ class WaarnemingOptionsFlow(OptionsFlowWithReload):
         current: dict[str, Any] = dict(self.config_entry.options)
         existing: list[Area] = list(current.get(CONF_AREAS, []))
         errors: dict[str, str] = {}
-        placeholders: dict[str, str] = {"area": "", "regions": regions_text(existing)}
+        placeholders: dict[str, str] = {
+            "area": "",
+            "example_url": EXAMPLE_AREA_URL,
+            "regions": regions_text(existing),
+        }
 
         if user_input is not None:
             keep_ids = set(user_input.get(CONF_AREAS, []))
