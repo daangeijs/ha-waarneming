@@ -1,0 +1,85 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Waarneming",
+        "description": "Rare sightings from waarneming.nl / observation.org around your Home zone and in areas you follow.",
+        "data": {
+          "name": "Name",
+          "use_home": "Around my Home zone",
+          "radius_km": "Radius around Home",
+          "add_areas": "Add waarneming.nl areas",
+          "min_rarity": "Minimum rarity",
+          "days": "Days back",
+          "species_group": "Species group",
+          "max_sightings": "Max sightings in the list"
+        },
+        "data_description": {
+          "use_home": "Sightings within the radius of zone.home (read at each update; the location is never stored).",
+          "add_areas": "Area ids or links like https://waarneming.nl/locations/701925/, one per line. Sub-areas are included.",
+          "min_rarity": "Rarity as waarneming.nl rates it for that place.",
+          "species_group": "1 = birds (other groups use waarneming.nl's group ids).",
+          "max_sightings": "The newest ones go into the `sightings` attribute; the state counts all."
+        }
+      },
+      "confirm": {
+        "title": "Areas found",
+        "description": "These waarneming.nl areas will be followed:\n\n{regions}"
+      }
+    },
+    "error": {
+      "invalid_area": "Not an area id or waarneming.nl area link: {area}",
+      "area_not_found": "waarneming.nl has no area {area}.",
+      "cannot_connect": "Could not reach waarneming.nl. Try again later.",
+      "no_source": "Choose the Home zone, an area, or both."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Waarneming",
+        "description": "Areas now followed:\n\n{regions}",
+        "data": {
+          "use_home": "Around my Home zone",
+          "radius_km": "Radius around Home",
+          "add_areas": "Add waarneming.nl areas",
+          "min_rarity": "Minimum rarity",
+          "days": "Days back",
+          "species_group": "Species group",
+          "max_sightings": "Max sightings in the list",
+          "areas": "Followed areas (untick to remove)",
+          "scan_minutes": "Update every (minutes)"
+        },
+        "data_description": {
+          "use_home": "Sightings within the radius of zone.home (read at each update; the location is never stored).",
+          "add_areas": "Area ids or links like https://waarneming.nl/locations/701925/, one per line. Sub-areas are included.",
+          "min_rarity": "Rarity as waarneming.nl rates it for that place.",
+          "species_group": "1 = birds (other groups use waarneming.nl's group ids).",
+          "max_sightings": "The newest ones go into the `sightings` attribute; the state counts all.",
+          "areas": "Names as waarneming.nl gives them.",
+          "scan_minutes": "At least 15 minutes, as agreed with observation.org."
+        }
+      },
+      "confirm": {
+        "title": "Areas found",
+        "description": "These waarneming.nl areas will be followed:\n\n{regions}"
+      }
+    },
+    "error": {
+      "invalid_area": "Not an area id or waarneming.nl area link: {area}",
+      "area_not_found": "waarneming.nl has no area {area}.",
+      "cannot_connect": "Could not reach waarneming.nl. Try again later.",
+      "no_source": "Choose the Home zone, an area, or both."
+    }
+  },
+  "selector": {
+    "min_rarity": {
+      "options": {
+        "1": "1 - common",
+        "2": "2 - fairly common",
+        "3": "3 - rare",
+        "4": "4 - very rare"
+      }
+    }
+  }
+}

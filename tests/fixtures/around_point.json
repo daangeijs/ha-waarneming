@@ -1,0 +1,177 @@
+{
+ "count": 5,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": 9000001,
+   "species": 1,
+   "date": "2026-10-27",
+   "time": "09:15",
+   "number": 1,
+   "point": {
+    "type": "Point",
+    "coordinates": [
+     5.31,
+     52.41
+    ]
+   },
+   "is_certain": true,
+   "is_escape": false,
+   "species_detail": {
+    "id": 1,
+    "scientific_name": "Lanius excubitor",
+    "name": "Klapekster",
+    "group": 1,
+    "type": "S"
+   },
+   "rarity": 3,
+   "species_group": 1,
+   "validation_status": "A",
+   "location": 800101,
+   "location_detail": {
+    "id": 800101,
+    "name": "Voorbeeldpolder",
+    "country_code": "NL",
+    "permalink": "https://waarneming.nl/locations/800101/"
+   },
+   "permalink": "https://waarneming.nl/observation/9000001/"
+  },
+  {
+   "id": 9000002,
+   "species": 2,
+   "date": "2026-10-28",
+   "time": "07:40",
+   "number": 1,
+   "point": {
+    "type": "Point",
+    "coordinates": [
+     5.29,
+     52.39
+    ]
+   },
+   "is_certain": false,
+   "is_escape": false,
+   "species_detail": {
+    "id": 2,
+    "scientific_name": "Falco vespertinus",
+    "name": "Roodpootvalk",
+    "group": 1,
+    "type": "S"
+   },
+   "rarity": 4,
+   "species_group": 1,
+   "validation_status": "A",
+   "location": 800102,
+   "location_detail": {
+    "id": 800102,
+    "name": "Testweide",
+    "country_code": "NL",
+    "permalink": "https://waarneming.nl/locations/800102/"
+   },
+   "permalink": "https://waarneming.nl/observation/9000002/"
+  },
+  {
+   "id": 9000003,
+   "species": 3,
+   "date": "2026-10-28",
+   "time": "08:00",
+   "number": 1,
+   "point": {
+    "type": "Point",
+    "coordinates": [
+     5.31,
+     52.41
+    ]
+   },
+   "is_certain": true,
+   "is_escape": true,
+   "species_detail": {
+    "id": 3,
+    "scientific_name": "Cygnus atratus",
+    "name": "Zwarte Zwaan",
+    "group": 1,
+    "type": "S"
+   },
+   "rarity": 3,
+   "species_group": 1,
+   "validation_status": "A",
+   "location": 800101,
+   "location_detail": {
+    "id": 800101,
+    "name": "Voorbeeldpolder",
+    "country_code": "NL",
+    "permalink": "https://waarneming.nl/locations/800101/"
+   },
+   "permalink": "https://waarneming.nl/observation/9000003/"
+  },
+  {
+   "id": 9000004,
+   "species": 4,
+   "date": "2026-10-28",
+   "time": "09:00",
+   "number": 12,
+   "point": {
+    "type": "Point",
+    "coordinates": [
+     5.28,
+     52.4
+    ]
+   },
+   "is_certain": true,
+   "is_escape": false,
+   "species_detail": {
+    "id": 4,
+    "scientific_name": "Loxia curvirostra",
+    "name": "Kruisbek",
+    "group": 1,
+    "type": "S"
+   },
+   "rarity": 2,
+   "species_group": 1,
+   "validation_status": "A",
+   "location": 800103,
+   "location_detail": {
+    "id": 800103,
+    "name": "Proefbos",
+    "country_code": "NL",
+    "permalink": "https://waarneming.nl/locations/800103/"
+   },
+   "permalink": "https://waarneming.nl/observation/9000004/"
+  },
+  {
+   "id": 9000010,
+   "species": 10,
+   "date": "2026-10-26",
+   "time": "16:05",
+   "number": 1,
+   "point": {
+    "type": "Point",
+    "coordinates": [
+     5.4,
+     52.45
+    ]
+   },
+   "is_certain": true,
+   "is_escape": false,
+   "species_detail": {
+    "id": 10,
+    "scientific_name": "Phalaropus fulicarius",
+    "name": "Grauwe Franjepoot",
+    "group": 1,
+    "type": "S"
+   },
+   "rarity": 4,
+   "species_group": 1,
+   "validation_status": "A",
+   "location": 701925,
+   "location_detail": {
+    "id": 701925,
+    "name": "Oostvaardersplassen - N2000",
+    "country_code": "NL",
+    "permalink": "https://waarneming.nl/locations/701925/"
+   },
+   "permalink": "https://waarneming.nl/observation/9000010/"
+  }
+ ]
+}

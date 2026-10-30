@@ -1,0 +1,23 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 800201,
+    "title": "Oostvaardersplassen - Kijkhut",
+    "url": "/locations/800201/"
+   },
+   "geometry": null
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": 701925,
+    "title": "Oostvaardersplassen - N2000",
+    "url": "/locations/701925/"
+   },
+   "geometry": null
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "count": 3,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": 9000010,
+   "species": 10,
+   "date": "2026-10-26",
+   "time": "16:05",
+   "number": 1,
+   "point": {
+    "type": "Point",
+    "coordinates": [
+     5.4,
+     52.45
+    ]
+   },
+   "is_certain": true,
+   "is_escape": false,
+   "species_detail": {
+    "id": 10,
+    "scientific_name": "Phalaropus fulicarius",
+    "name": "Grauwe Franjepoot",
+    "group": 1,
+    "type": "S"
+   },
+   "rarity": 4,
+   "species_group": 1,
+   "validation_status": "A",
+   "location": 701925,
+   "location_detail": {
+    "id": 701925,
+    "name": "Oostvaardersplassen - N2000",
+    "country_code": "NL",
+    "permalink": "https://waarneming.nl/locations/701925/"
+   },
+   "permalink": "https://waarneming.nl/observation/9000010/"
+  },
+  {
+   "id": 9000011,
+   "species": 11,
+   "date": "2026-10-27",
+   "time": null,
+   "number": 2,
+   "point": {
+    "type": "Point",
+    "coordinates": [
+     5.38,
+     52.46
+    ]
+   },
+   "is_certain": true,
+   "is_escape": false,
+   "species_detail": {
+    "id": 11,
+    "scientific_name": "Asio flammeus",
+    "name": "Velduil",
+    "group": 1,
+    "type": "S"
+   },
+   "rarity": 3,
+   "species_group": 1,
+   "validation_status": "A",
+   "location": 701925,
+   "location_detail": {
+    "id": 701925,
+    "name": "Oostvaardersplassen - N2000",
+    "country_code": "NL",
+    "permalink": "https://waarneming.nl/locations/701925/"
+   },
+   "permalink": "https://waarneming.nl/observation/9000011/"
+  },
+  {
+   "id": 9000012,
+   "species": 12,
+   "date": "2026-10-28",
+   "time": "11:00",
+   "number": 1,
+   "point": null,
+   "is_certain": true,
+   "is_escape": false,
+   "species_detail": {
+    "id": 12,
+    "scientific_name": "Circus macrourus",
+    "name": "",
+    "group": 1,
+    "type": "S"
+   },
+   "rarity": 4,
+   "species_group": 1,
+   "validation_status": "A",
+   "location": 800201,
+   "location_detail": {
+    "id": 800201,
+    "name": "Oostvaardersplassen - Kijkhut",
+    "country_code": "NL",
+    "permalink": "https://waarneming.nl/locations/800201/"
+   },
+   "permalink": "https://waarneming.nl/observation/9000012/"
+  }
+ ]
+}

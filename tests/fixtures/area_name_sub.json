@@ -1,0 +1,75 @@
+{
+ "count": 2,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": 9000030,
+   "species": 30,
+   "date": "2026-10-28",
+   "time": "10:00",
+   "number": 1,
+   "point": {
+    "type": "Point",
+    "coordinates": [
+     5.37,
+     52.44
+    ]
+   },
+   "is_certain": true,
+   "is_escape": false,
+   "species_detail": {
+    "id": 30,
+    "scientific_name": "Anas platyrhynchos",
+    "name": "Wilde Eend",
+    "group": 1,
+    "type": "S"
+   },
+   "rarity": 1,
+   "species_group": 1,
+   "validation_status": "A",
+   "location": 800201,
+   "location_detail": {
+    "id": 800201,
+    "name": "Oostvaardersplassen - Kijkhut",
+    "country_code": "NL",
+    "permalink": "https://waarneming.nl/locations/800201/"
+   },
+   "permalink": "https://waarneming.nl/observation/9000030/"
+  },
+  {
+   "id": 9000031,
+   "species": 31,
+   "date": "2026-10-28",
+   "time": "09:00",
+   "number": 1,
+   "point": {
+    "type": "Point",
+    "coordinates": [
+     5.36,
+     52.43
+    ]
+   },
+   "is_certain": true,
+   "is_escape": false,
+   "species_detail": {
+    "id": 31,
+    "scientific_name": "Fulica atra",
+    "name": "Meerkoet",
+    "group": 1,
+    "type": "S"
+   },
+   "rarity": 1,
+   "species_group": 1,
+   "validation_status": "A",
+   "location": 800202,
+   "location_detail": {
+    "id": 800202,
+    "name": "Oostvaardersplassen - Pad",
+    "country_code": "NL",
+    "permalink": "https://waarneming.nl/locations/800202/"
+   },
+   "permalink": "https://waarneming.nl/observation/9000031/"
+  }
+ ]
+}

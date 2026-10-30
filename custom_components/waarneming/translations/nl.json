@@ -1,0 +1,85 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Waarneming",
+        "description": "Zeldzame waarnemingen van waarneming.nl / observation.org rond je thuiszone en in gebieden die je volgt.",
+        "data": {
+          "name": "Naam",
+          "use_home": "Rond mijn thuiszone",
+          "radius_km": "Straal rond thuis",
+          "add_areas": "waarneming.nl-gebieden toevoegen",
+          "min_rarity": "Minimale zeldzaamheid",
+          "days": "Aantal dagen terug",
+          "species_group": "Soortgroep",
+          "max_sightings": "Maximaal aantal waarnemingen in de lijst"
+        },
+        "data_description": {
+          "use_home": "Waarnemingen binnen de straal van zone.home (bij elke update gelezen; de locatie wordt nergens opgeslagen).",
+          "add_areas": "Gebied-id's of links zoals https://waarneming.nl/locations/701925/, één per regel. Deelgebieden tellen mee.",
+          "min_rarity": "Zeldzaamheid zoals waarneming.nl die voor die plek aangeeft.",
+          "species_group": "1 = vogels (andere groepen volgens de groep-id's van waarneming.nl).",
+          "max_sightings": "De nieuwste komen in het attribuut `sightings`; de status telt ze allemaal."
+        }
+      },
+      "confirm": {
+        "title": "Gebieden gevonden",
+        "description": "Deze waarneming.nl-gebieden worden gevolgd:\n\n{regions}"
+      }
+    },
+    "error": {
+      "invalid_area": "Geen gebied-id of waarneming.nl-gebiedslink: {area}",
+      "area_not_found": "waarneming.nl kent geen gebied {area}.",
+      "cannot_connect": "waarneming.nl is niet bereikbaar. Probeer het later opnieuw.",
+      "no_source": "Kies de thuiszone, een gebied, of allebei."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Waarneming",
+        "description": "Nu gevolgde gebieden:\n\n{regions}",
+        "data": {
+          "use_home": "Rond mijn thuiszone",
+          "radius_km": "Straal rond thuis",
+          "add_areas": "waarneming.nl-gebieden toevoegen",
+          "min_rarity": "Minimale zeldzaamheid",
+          "days": "Aantal dagen terug",
+          "species_group": "Soortgroep",
+          "max_sightings": "Maximaal aantal waarnemingen in de lijst",
+          "areas": "Gevolgde gebieden (vinkje weg = verwijderen)",
+          "scan_minutes": "Bijwerken elke (minuten)"
+        },
+        "data_description": {
+          "use_home": "Waarnemingen binnen de straal van zone.home (bij elke update gelezen; de locatie wordt nergens opgeslagen).",
+          "add_areas": "Gebied-id's of links zoals https://waarneming.nl/locations/701925/, één per regel. Deelgebieden tellen mee.",
+          "min_rarity": "Zeldzaamheid zoals waarneming.nl die voor die plek aangeeft.",
+          "species_group": "1 = vogels (andere groepen volgens de groep-id's van waarneming.nl).",
+          "max_sightings": "De nieuwste komen in het attribuut `sightings`; de status telt ze allemaal.",
+          "areas": "Namen zoals waarneming.nl ze geeft.",
+          "scan_minutes": "Minstens 15 minuten, zo afgesproken met observation.org."
+        }
+      },
+      "confirm": {
+        "title": "Gebieden gevonden",
+        "description": "Deze waarneming.nl-gebieden worden gevolgd:\n\n{regions}"
+      }
+    },
+    "error": {
+      "invalid_area": "Geen gebied-id of waarneming.nl-gebiedslink: {area}",
+      "area_not_found": "waarneming.nl kent geen gebied {area}.",
+      "cannot_connect": "waarneming.nl is niet bereikbaar. Probeer het later opnieuw.",
+      "no_source": "Kies de thuiszone, een gebied, of allebei."
+    }
+  },
+  "selector": {
+    "min_rarity": {
+      "options": {
+        "1": "1 - algemeen",
+        "2": "2 - vrij algemeen",
+        "3": "3 - zeldzaam",
+        "4": "4 - zeer zeldzaam"
+      }
+    }
+  }
+}

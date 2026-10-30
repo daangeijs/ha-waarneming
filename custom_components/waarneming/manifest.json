@@ -1,0 +1,12 @@
+{
+  "domain": "waarneming",
+  "name": "Waarneming",
+  "codeowners": ["@daangeijs"],
+  "config_flow": true,
+  "documentation": "https://github.com/daangeijs/ha-waarneming",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/daangeijs/ha-waarneming/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
