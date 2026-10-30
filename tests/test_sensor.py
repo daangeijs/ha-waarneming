@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import time
+
 from homeassistant.core import HomeAssistant
 from pytest_homeassistant_custom_component.common import MockConfigEntry
 
@@ -20,6 +22,9 @@ SIGHTING_KEYS = {
     "certain",
     "region",
     "url",
+    "title",
+    "subtitle",
+    "ts",
 }
 
 
@@ -63,8 +68,11 @@ async def test_entity_shape(hass: HomeAssistant, aioclient_mock, home_zone) -> N
     sightings = attrs["sightings"]
     assert len(sightings) == 5
     assert all(set(s) == SIGHTING_KEYS for s in sightings)
-    times = [s["observed_at"] for s in sightings]
+    times = [s["ts"] for s in sightings]
+    assert all(isinstance(t, int) for t in times)
     assert times == sorted(times, reverse=True)
+    assert isinstance(attrs["updated"], int)
+    assert abs(attrs["updated"] - time.time()) < 60
     assert {s["region"] for s in sightings} == {
         "Rond huis",
         "Oostvaardersplassen - N2000",
@@ -103,4 +111,5 @@ async def test_sightings_not_recorded(
     from custom_components.waarneming.sensor import WaarnemingSensor
 
     assert "sightings" in WaarnemingSensor._unrecorded_attributes
+    assert "updated" in WaarnemingSensor._unrecorded_attributes
     assert entry.title == "Rare birds nearby"

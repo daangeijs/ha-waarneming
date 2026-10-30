@@ -43,38 +43,55 @@ once, with the region of the first source (home first, then the areas in the ord
 `sensor.rare_birds_nearby` (unit `waarnemingen`, icon `mdi:bird`)
 
 - **state**: number of sightings after the filters, all sources together
-- `sightings`: newest first, at most *max sightings*, each:
+- `sightings`: newest first (by `ts`), at most *max sightings*, each:
 
   ```json
   {
-    "species": "Klapekster",
-    "scientific": "Lanius excubitor",
-    "count": 1,
-    "place": "Oostvaardersplassen - N2000",
-    "distance_km": 8.4,
-    "observed_at": "2026-10-27T09:15:00",
+    "title": "3× Kraanvogel",
+    "subtitle": "Heidebos · 3,2 km",
+    "ts": 1793088900,
+    "species": "Kraanvogel",
+    "scientific": "Grus grus",
+    "count": 3,
+    "place": "Heidebos",
+    "distance_km": 3.2,
+    "observed_at": "2026-10-27T09:15:00+01:00",
     "rarity": 3,
     "certain": true,
-    "region": "Oostvaardersplassen - N2000",
+    "region": "Rond huis",
     "url": "https://waarneming.nl/observation/123456789/"
   }
   ```
 
-  `observed_at` is local time as the site gives it (date only when no time was recorded). `distance_km` is measured
-  from your Home zone, also for area sightings, and is `null` when the observation has no point. Sightings from the
-  home-zone source have `region: "Rond huis"`.
+  The first three fields are ready to print, so a small display does no formatting of its own:
+
+  - `title`: the Dutch name (the scientific name when there is none), `" ?"` appended when the sighting is not
+    certain, and `"3× "` in front when more than one bird was counted.
+  - `subtitle`: place and distance from your Home zone with a decimal comma (`"Heidebos · 3,2 km"`). Without a
+    distance, an area sighting shows the area instead (`"Heidebos · Oostvaardersplassen - N2000"`), or just the place
+    when the place is the area.
+  - `ts`: observation time as Unix epoch seconds (UTC).
+
+  waarneming.nl gives date and time as Dutch local time. `observed_at` is that time in ISO form with its UTC offset
+  (`+01:00` in winter, `+02:00` in summer), or only the date when no time was recorded; such a sighting gets 12:00
+  local time for `ts` and for sorting. On the night the clocks go back, a time between 02:00 and 03:00 is read as
+  summer time. `distance_km` is measured from your Home zone, also for area sightings, and is `null` when the
+  observation has no point or the home zone is unknown. Sightings from the home-zone source have
+  `region: "Rond huis"`.
+- `updated`: Unix epoch seconds of the last successful fetch
 - `radius_km` (`null` when the home zone is off), `min_rarity`, `days`
 - `attribution`: `Data: waarneming.nl / observation.org`
 
-`sightings` is kept out of the recorder's history; the list is only useful now.
+`sightings` and `updated` are kept out of the recorder's history; they are only useful now.
 
 When waarneming.nl cannot be reached the sensor becomes unavailable (logged once, and once again when it recovers).
 When the API answers 429 the next try waits for its `Retry-After`, or an hour.
 
 ## HA Paper tile
 
-On the X4 Home web console add a **List from attributes** tile and pick `sensor.rare_birds_nearby`. Its defaults read
-this shape: title `species`, subtitle `place distance_km`, time `observed_at`, and the `attribution` in the foot.
+On the X4 Home web console add a **List from attributes** tile and pick `sensor.rare_birds_nearby`. Point it at
+`title`, `subtitle` and `ts`, with the `attribution` in the foot. Older tiles that read `species`,
+`place distance_km` and `observed_at` keep working.
 
 ## Data and attribution
 

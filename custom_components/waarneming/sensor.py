@@ -31,8 +31,8 @@ class WaarnemingSensor(CoordinatorEntity[WaarnemingCoordinator], SensorEntity):
     _attr_icon = "mdi:bird"
     _attr_native_unit_of_measurement = UNIT
     _attr_attribution = ATTRIBUTION
-    # the list changes every poll and is only useful now; keep it out of history
-    _unrecorded_attributes = frozenset({"sightings"})
+    # these change every poll and are only useful now; keep them out of history
+    _unrecorded_attributes = frozenset({"sightings", "updated"})
 
     def __init__(self, coordinator: WaarnemingCoordinator) -> None:
         super().__init__(coordinator)
@@ -58,4 +58,5 @@ class WaarnemingSensor(CoordinatorEntity[WaarnemingCoordinator], SensorEntity):
             "radius_km": coordinator.radius_km if coordinator.use_home else None,
             "min_rarity": coordinator.min_rarity,
             "days": coordinator.days,
+            "updated": coordinator.data.updated,
         }

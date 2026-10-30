@@ -9,7 +9,7 @@ DOMAIN: Final = "waarneming"
 
 API_BASE: Final = "https://waarneming.nl/api/v1"
 USER_AGENT: Final = (
-    "HomeAssistant-Waarneming/0.1.0 (+https://github.com/daangeijs/ha-waarneming)"
+    "HomeAssistant-Waarneming/0.2.0 (+https://github.com/daangeijs/ha-waarneming)"
 )
 ATTRIBUTION: Final = "Data: waarneming.nl / observation.org"
 
